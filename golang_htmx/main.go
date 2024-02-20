@@ -32,4 +32,8 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
+func errHandler(w http.ResponseWriter, r *http.Request, err error) {
+
+}
+
 //15:35
