@@ -36,6 +36,11 @@ func errHandler(w http.ResponseWriter, r *http.Request, err error) {
 	http.Error(w, err.Error(), http.StatusInternalServerError)
 	log.Println(err)
 	return
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		log.Println(err)
+		return
+	}
 }
 
 //15:35
