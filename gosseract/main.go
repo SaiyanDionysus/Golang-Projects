@@ -12,6 +12,4 @@ func main() {
 	client.SetImage("")
 	text, _ := client.Text()
 	fmt.Println(text)
-
-	fmt.Println(nothing)
 }
