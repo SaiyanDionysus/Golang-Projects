@@ -43,8 +43,6 @@ func postAlbums(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, newAlbum)
 }
 
-//here is the handler to return a specific item (post and get are working)
-
 func getAlbumByID(c *gin.Context) {
 	id := c.Param("id")
 
